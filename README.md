@@ -43,3 +43,6 @@ To use the DocuSign Android SDK, credentials are necessary. That user's credenti
 4. Finish signing.
 5. In Home screen, select 'Pending Sync' tab.
 6. Sync the signed document.
+
+## License information
+This repository uses the MIT License. See the [LICENSE](./LICENSE) file for more information.
