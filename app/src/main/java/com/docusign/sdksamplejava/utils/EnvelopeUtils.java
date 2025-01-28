@@ -230,7 +230,7 @@ public class EnvelopeUtils {
             DSDocument document = new DSDocument.Builder()
                     .documentId(1)
                     .uri(fileURI.toString())
-                    .name("TGK Capital Portfolio B Agreement")
+                    .name("Android Finance Portfolio B Agreement")
                     .build();
             documents.add(document);
             List<DSTab> tabs = createInvestmentAgreementTabs(client);
@@ -257,7 +257,7 @@ public class EnvelopeUtils {
                 DSDocument accreditedInvestorVerificationDocument = new DSDocument.Builder()
                         .documentId(2)
                         .uri(accreditedInvestorVerificationFileURI.toString())
-                        .name("TGK Capital Portfolio B Agreement")
+                        .name("Android Finance Portfolio B Agreement")
                         .build();
                 documents.add(accreditedInvestorVerificationDocument);
 
@@ -286,7 +286,7 @@ public class EnvelopeUtils {
             );
             // DS: Envelope creation
             return new DSEnvelope.Builder()
-                    .envelopeName("TGK Capital Portfolio B Agreement")
+                    .envelopeName("Android Finance Portfolio B Agreement")
                     .documents(documents)
                     .recipients(recipients)
                     .textCustomFields( // this is for free-form metadata

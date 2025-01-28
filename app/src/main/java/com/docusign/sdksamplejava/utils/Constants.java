@@ -20,8 +20,8 @@ public interface Constants {
     String REDIRECT_URI_PREF = "redirect_uri";
 
 
-    String PORTFOLIO_A_DOCUMENT_FILE_NAME = "TGK-Capital-PortfolioA-Agreement.pdf";
-    String PORTFOLIO_B_DOCUMENT_FILE_NAME = "TGK-Capital-PortfolioB-Agreement.pdf";
+    String PORTFOLIO_A_DOCUMENT_FILE_NAME = "Android-Finance-PortfolioA-Agreement.pdf";
+    String PORTFOLIO_B_DOCUMENT_FILE_NAME = "Android-Finance-PortfolioB-Agreement.pdf";
     String ACCREDITED_INVESTOR_VERIFICATION_FILE_NAME = "Accredited-Investor-Verification.pdf";
 
     interface TemplateConstants {
