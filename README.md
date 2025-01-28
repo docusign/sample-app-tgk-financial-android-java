@@ -1,12 +1,12 @@
 #  Android Finance Sample Application
-This is a sample Java application which demonstrates the integration of DocuSign Android SDK.
+This is a sample Java application which demonstrates the integration of Docusign Android SDK.
 
 ## Credentials Needed
 Before getting started, an Integration Key and valid Service User credentials are needed. The SDK cannot be used without these.
 ### Integration Key
-To use any DocuSign SDK or the REST API, an Integration Key is needed. Visit https://developers.docusign.com/ to obtain an Integration Key if one does not already exist. Note that an Integration Key is first provisioned on the DEMO environment, and then must be promoted to PROD when ready. 
+To use any Docusign SDK or the REST API, an Integration Key is needed. Visit https://developers.docusign.com/ to obtain an Integration Key if one does not already exist. Note that an Integration Key is first provisioned on the DEMO environment, and then must be promoted to PROD when ready. 
 ### Email & Password
-To use the DocuSign Android SDK, credentials are necessary. That user's credentials are what should be used in the Authentication section below.
+To use the Docusign Android SDK, credentials are necessary. That user's credentials are what should be used in the Authentication section below.
 
 ## Sample Application Usage
 1. Launch Sample Application.
