@@ -17,7 +17,7 @@ allprojects {
         google()
         mavenCentral()
         maven {
-            url  "https://docucdn-a.akamaihd.net/prod/docusignandroidsdk"
+            url  = "https://docucdn-a.akamaihd.net/prod/docusignandroidsdk"
         }
     }
 }

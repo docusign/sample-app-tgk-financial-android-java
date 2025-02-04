@@ -228,7 +228,7 @@ public class EnvelopeUtils {
             URI fileURI = file.toURI();
             List<DSDocument> documents = new ArrayList<>();
             DSDocument document = new DSDocument.Builder()
-                    .documentId(1)
+                    .documentId("1")
                     .uri(fileURI.toString())
                     .name("Android Finance Portfolio B Agreement")
                     .build();
@@ -238,7 +238,7 @@ public class EnvelopeUtils {
             List<DSEnvelopeRecipient> recipients = new ArrayList<>();
             recipients.add(
                     new DSEnvelopeRecipient.Builder()
-                            .recipientId(1)
+                            .recipientId("1")
                             .routingOrder(1)
                             .hostName(user.getName())
                             .hostEmail(user.getEmail())
@@ -255,7 +255,7 @@ public class EnvelopeUtils {
                 value = 1;
                 URI accreditedInvestorVerificationFileURI = accreditedInvestorVerification.getFile().toURI();
                 DSDocument accreditedInvestorVerificationDocument = new DSDocument.Builder()
-                        .documentId(2)
+                        .documentId("2")
                         .uri(accreditedInvestorVerificationFileURI.toString())
                         .name("Android Finance Portfolio B Agreement")
                         .build();
@@ -264,7 +264,7 @@ public class EnvelopeUtils {
                 List<DSTab> accreditedInvestorVerificationTabs = createAccreditedInvestorVerificationTabs(accreditedInvestorVerification);
                 recipients.add(
                         new DSEnvelopeRecipient.Builder()
-                                .recipientId(2)
+                                .recipientId("2")
                                 .routingOrder(2)
                                 .hostName(user.getName())
                                 .hostEmail(user.getEmail())
@@ -277,7 +277,7 @@ public class EnvelopeUtils {
             }
             recipients.add(
                     new DSEnvelopeRecipient.Builder()
-                            .recipientId(2 + value)
+                            .recipientId(String.valueOf(2 + Integer.parseInt(value)))
                             .routingOrder(2 + value)
                             .signerName("Jack Doe") // if someone needs a signed copy, their name here
                             .signerEmail("j.d@gmail.com") // if someone needs a signed copy, their email here
@@ -305,8 +305,8 @@ public class EnvelopeUtils {
         try {
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(470)
                             .yPosition(25)
@@ -316,8 +316,8 @@ public class EnvelopeUtils {
             );                // Date
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(130)
                             .yPosition(50)
@@ -328,8 +328,8 @@ public class EnvelopeUtils {
             );       // Client name
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(130)
                             .yPosition(80)
@@ -340,8 +340,8 @@ public class EnvelopeUtils {
             );                    // Client address
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(220)
                             .yPosition(140)
@@ -352,8 +352,8 @@ public class EnvelopeUtils {
             );                      // Verifier name
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(150)
                             .yPosition(250)
@@ -364,8 +364,8 @@ public class EnvelopeUtils {
             );                      // Verifier License Number
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(480)
                             .yPosition(250)
@@ -376,8 +376,8 @@ public class EnvelopeUtils {
             );                      // Verifier State Registered
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(50)
                             .yPosition(560)
@@ -387,8 +387,8 @@ public class EnvelopeUtils {
             );                      // Verifier Signature
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(50)
                             .yPosition(620)
@@ -399,8 +399,8 @@ public class EnvelopeUtils {
             );                      // Verifier Name
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(50)
                             .yPosition(660)
@@ -411,8 +411,8 @@ public class EnvelopeUtils {
             );                      // Verifier Company
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(320)
                             .yPosition(570)
@@ -424,8 +424,8 @@ public class EnvelopeUtils {
             if (accreditedInvestorVerification.getVerifier().getAddressLine2() != null) {
                 tabs.add(
                         new DSTab.Builder()
-                                .documentId(2)
-                                .recipientId(2)
+                                .documentId("2")
+                                .recipientId("2")
                                 .pageNumber(1)
                                 .xPosition(320)
                                 .yPosition(620)
@@ -437,8 +437,8 @@ public class EnvelopeUtils {
             }
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(2)
-                            .recipientId(2)
+                            .documentId("2")
+                            .recipientId("2")
                             .pageNumber(1)
                             .xPosition(320)
                             .yPosition(660)
@@ -459,8 +459,8 @@ public class EnvelopeUtils {
         try {
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(110)
@@ -471,8 +471,8 @@ public class EnvelopeUtils {
             );                 // Address line 1
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(140)
@@ -483,8 +483,8 @@ public class EnvelopeUtils {
             );                        // Address line 2
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(165)
@@ -495,8 +495,8 @@ public class EnvelopeUtils {
             );                      // Address line 3
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(50)
                             .yPosition(165)
@@ -507,8 +507,8 @@ public class EnvelopeUtils {
             );                       // Full name
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(550)
@@ -519,8 +519,8 @@ public class EnvelopeUtils {
             );                        // Client number
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(630)
@@ -531,8 +531,8 @@ public class EnvelopeUtils {
             );                        // Investment amount
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(370)
                             .yPosition(720)
@@ -541,8 +541,8 @@ public class EnvelopeUtils {
             );                        // Signature
             tabs.add(
                     new DSTab.Builder()
-                            .documentId(1)
-                            .recipientId(1)
+                            .documentId("1")
+                            .recipientId("1")
                             .pageNumber(1)
                             .xPosition(50)
                             .yPosition(730)

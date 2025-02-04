@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 35
-    buildToolsVersion "30.0.3"
+    namespace = "com.docusign.sdksamplejava"
 
     defaultConfig {
         applicationId "com.docusign.sdksamplejava"
@@ -44,4 +44,5 @@ dependencies {
     implementation 'com.docusign:androidsdk:2.0.0'
     implementation 'com.docusign:sdk-common:2.0.0'
     implementation 'com.docusign:sdk-esign-api:2.0.0'
+    implementation 'com.docusign:sdk-offline-signing:2.0.0'
 }
