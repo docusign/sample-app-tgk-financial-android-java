@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">TGK Capital</string>
+    <string name="app_name">Android Finance Sample App</string>
     <string name="tab_overview">Overview</string>
     <string name="tab_pending_sync">Pending Sync</string>
     <string name="tab_templates">Templates</string>
-    <string name="tgkfinancial">TGK Capital</string>
+    <string name="androidfinance">Android Finance</string>
     <string name="forgot_password"><u>Forgot password?</u></string>
     <string name="sign_up"><u>Don\'t have an account? Signup</u></string>
     <string name="terms">By continuing, you agree to the Terms of Use and Privacy Policy</string>
@@ -11,7 +11,7 @@
     <string name="login">Log In</string>
     <string name="logout">Log out</string>
     <string name="create_new_improvement">Create New Agreement</string>
-    <string name="tgk_portfolios">TGK Portfolios</string>
+    <string name="finance_portfolios">Android Finance Portfolios</string>
     <string name="upcoming_appointments">Your upcoming investment presentations:</string>
     <string name="signed">Signed</string>
     <string name="unsigned">Unsigned</string>
@@ -21,7 +21,7 @@
     <string name="online_envelope">Online Envelope</string>
     <string name="offline_envelope">Offline Envelope</string>
     <string name="cancel">Cancel</string>
-    <string name="envelope_created_title">TGK Portfolios</string>
+    <string name="envelope_created_title">Android Finance Portfolios</string>
     <string name="envelope_created_message">Envelope created successfully</string>
     <string name="sign">Sign</string>
     <string name="ok" tools:ignore="PrivateResource">OK</string>

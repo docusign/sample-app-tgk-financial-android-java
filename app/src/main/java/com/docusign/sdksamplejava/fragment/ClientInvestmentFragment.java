@@ -462,7 +462,7 @@ public class ClientInvestmentFragment extends Fragment {
             AccreditedInvestorVerifier accreditedInvestorVerifier = null;
             if (user != null) {
                 accreditedInvestorVerifier = new AccreditedInvestorVerifier(user.getName(),
-                        getString(R.string.tgkfinancial), "TN12345", "CA",
+                        getString(R.string.androidfinance), "TN12345", "CA",
                         "202 Main Street", null, "San Francisco, CA, 94105");
             }
             if (accreditedInvestorVerifier != null) {

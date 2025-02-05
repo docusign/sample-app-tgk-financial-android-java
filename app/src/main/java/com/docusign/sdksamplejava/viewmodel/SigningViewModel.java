@@ -13,7 +13,6 @@ import com.docusign.androidsdk.dsmodels.DSEnvelope;
 import com.docusign.androidsdk.exceptions.DSSigningException;
 import com.docusign.androidsdk.exceptions.DocuSignNotInitializedException;
 import com.docusign.androidsdk.listeners.DSCaptiveSigningListener;
-import com.docusign.androidsdk.listeners.DSEnvelopeOfflineSigningListener;
 import com.docusign.androidsdk.listeners.DSOfflineSigningListener;
 import com.docusign.androidsdk.listeners.DSOnlineSigningListener;
 import com.docusign.sdksamplejava.livedata.CachedEnvelopeSigningModel;
@@ -173,7 +172,7 @@ public class SigningViewModel extends ViewModel {
     public void signCachedEnvelope(@NonNull Context context, @NonNull String envelopeId) {
         // DS: Offline Signing using local envelopeId
         if (signingDelegate != null) {
-            signingDelegate.signOffline(context, envelopeId, new DSEnvelopeOfflineSigningListener() {
+            signingDelegate.signOffline(context, envelopeId, new DSOfflineSigningListener() {
 
                 @Override
                 public void onSuccess(@NonNull String envelopeId) {

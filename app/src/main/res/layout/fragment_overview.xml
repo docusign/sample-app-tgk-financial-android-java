@@ -39,11 +39,11 @@
         app:layout_constraintTop_toBottomOf="@+id/new_presentation_button" />
 
     <TextView
-        android:id="@+id/tgk_portfolios_text_view"
+        android:id="@+id/finance_portfolios_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/tgk_portfolios"
+        android:text="@string/finance_portfolios"
         android:textColor="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tgk_portfolios_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/finance_portfolios_text_view"
         app:layout_constraintVertical_bias="0.501"
         app:srcCompat="@drawable/portfoliograph" />
 
