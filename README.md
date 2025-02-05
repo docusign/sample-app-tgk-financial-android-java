@@ -12,7 +12,7 @@ To use the Docusign Android SDK, credentials are necessary. That user's credenti
 1. Launch Sample Application.
 2. In Login screen, select Settings from Title toolbar. Enter IntegratorKey, ClientSecret and Redirect Uri.
 3. Select Login in Login screen. Provide Docusign user name and password associated with the account.
-4. User is navigated to Home screen after succeessful login. It displays list of appointments.
+4. User is navigated to Home screen after successful login. It displays list of appointments.
 ### Template flow 
 #### Online Signing 
 1. Device or emulator should have proper network and is not in airplane mode.

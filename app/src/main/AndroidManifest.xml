@@ -25,6 +25,7 @@
         <activity
             android:name="com.docusign.sdksamplejava.activity.HomeActivity"
             android:label="@string/home"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
             android:name="com.docusign.sdksamplejava.activity.AgreementActivity"
@@ -33,6 +34,7 @@
         <activity
             android:name="com.docusign.sdksamplejava.activity.SettingsActivity"
             android:label="@string/settings"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.NewPresentationActivity" />
     </application>

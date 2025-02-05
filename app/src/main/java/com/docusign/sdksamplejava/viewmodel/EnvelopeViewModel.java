@@ -137,7 +137,7 @@ public class EnvelopeViewModel extends ViewModel {
     public void getCachedEnvelope(@NonNull String envelopeId) {
         // DS: Get cached envelope
         if (envelopeDelegate != null) {
-            envelopeDelegate.getCachedEnvelope(envelopeId, new DSGetCachedEnvelopeListener() {
+            envelopeDelegate.getCachedEnvelope(envelopeId, true, new DSGetCachedEnvelopeListener() {
                 @Override
                 public void onComplete(@NonNull DSEnvelope envelope) {
                     GetCachedEnvelopeModel getCachedEnvelopeModel = new GetCachedEnvelopeModel(Status.COMPLETE, envelope, null);
